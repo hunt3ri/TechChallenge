@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Iain Hunter</title>
+
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+        document.write('<link rel="stylesheet" href="css/print/' + (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper') + '.css" type="text/css" media="print">');
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="reveal">
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+            <section>
+                <h1>Tech Challenges</h1>
+                <h2>A 15min guide to managing them</h2>
+                <h3>By Iain Hunter (for hire)</h3>
+                <p>iain.hunter@outlook.com</p>
+                <p><small>@hunt3ri &nbsp; iainhunter.wordpress.com</small></p>
+            </section>
+
+            <section>
+                <section>
+                <h2>Tech Challenge Brief</h2>
+                    <ol>
+                            <li>Significant Implications</li>
+                            <li>Technical in nature</li>
+                            <li>Various possible resolutions</li>
+                            <li>None being obvious</li>
+                    </ol>
+                    <br>
+                    <br>
+                    <br>
+                    <p style="text-align: left">Sounds like a problem for...</p>
+                </section>
+                <section>
+                    <img  src="images/ghostbusters.jpg" alt="Bustin makes me feel good">
+                </section>
+            </section>
+
+            <section>
+                <h2>Topics I Considered</h2>
+                <p style="text-align: left">That time when we...</p>
+                <br>
+                <ul>
+                    <li>Ported our app to <strong>Windows Azure</strong></li>
+                    <li>Chose <strong>Moq</strong> as our mocking library</li>
+                    <li>Chose <strong>Zencoder</strong> to encode user uploaded video</li>
+                    <li>Ported our email to <strong>SendGrid</strong></li>
+                    <li>Chose <strong>Castle Windsor</strong> as our DI Framework</li>    
+                    <li>Chose <strong>Unity</strong> as our Game Engine</li>
+                </ul>
+                <br>
+                <br>
+                <p style="text-align: left">Beyond scheduling/budgetary issues these decisions were mostly no-brainers</p>
+            </section>
+
+            <section>
+                <h1>Legacy Code</h1>
+                  <img  src="images/woman-screaming.png" alt="Yikes">
+            </section>
+
+            <section>
+                <h2>Legacy Code - Defined</h2>
+                <blockquote>"Legacy Code is often used as a slang term for difficult-to-change code that we don't understand.  To me Legacy Code is simply code without tests.  Without tests we don't know if our changes are making things better or worse."</blockquote>
+                <p><small>Michael Feathers, Working Effectively with Legacy Code, 2005</small></p>
+            </section>
+
+            <section>
+                <section>
+                    <h2>Case Study : Travel 2</h2>
+                    <h3>The Problem</h3>
+                    <p>Enhance bespoke Legacy Airline & Hotel Reservation System</p>
+					<p>-v-</p>
+					<p>Purchase Off-The-Shelf Solution</p>
+                </section>
+                <section>
+                    <h2>Rationale for change</h2>
+                    <ol>
+                        <li>Staff Training Costs</li>
+                        <li>Greenscreen Interface</li>
+                        <li>High Bus Factor</li>
+                        <li>Creaking Infrastructure - parts from Ebay!!!</li>
+                        <li>Difficult to change and react</li>
+                        <li>Vendor golddust</li>
+                    </ol>
+
+                </section>
+                <section>
+                    <h1>Existing</h1>
+                    <h1>Architecture</h1>
+                </section>
+                
+                <section>
+                    <h2>My Recommendations</h2>
+                    <ol>
+                        <li>Port infrastructure to new servers</li>
+                        <li>Create XML-RPC interface into the Business Layer</li>
+                        <li>Create Modern Web Interface</li>
+                        <li>Slowly document, understand the BL layer</li>
+                    </ol>
+                </section>
+                <section>
+                    <h2>What Happened</h2>
+                    <ol>
+                        <li>Ported infrastructure to new servers</li>
+                        <li>Vendor Solution was selected</li>
+                        <li>Project failed at cost > £1Million</li>
+                        <li>Green-screen screens remain</li>
+                    </ol>
+                </section>
+                <section>
+                    <h2>Lessons Learned</h2>
+                    <ol>
+                        <li>It's a mistake to replace your business differentiator with an off-the-shelf solution</li>
+						<li>Don't choose an off-the-shelf solution if >20% of the project is customization</li>
+                        <li>Not investing in your IT infrastructure and ignoring your legacy code problems until they're critical is simply bad management</li>
+						<li>My plan could have failed (more cheaply)</li>
+                        <li>Big decisions are rarely taken purely on technical merits</li>
+						<li>Confirmation Bias - Impossible to eliminate</li>
+                    </ol>
+                </section>
+            </section>
+
+            <section>
+                <h2>Rules of Thumb</h2>
+				<ol>
+					<li>YAGNI - If in doubt choose the simplest solution</li>
+                    <li>MVP - Create the Minimum Viable Product as quickly as you can</li>
+					<li>Play to your team strengths</li>
+                    <li>-1000 points rule - Anders Hejlsberg</li>
+					<li>Be aware of the realpolitik</li>
+				</ol>
+            </section>
+			
+            <section>
+                <h2>Tech Challenges Managed Right</h2>
+                <ul>
+                    <li>WhatsApp - Erlang - 50+ billion messages per day</li>
+					<li>Circa 50 members of staff</li>
+                    <li>Sell to Zuck for $19B
+                </ul>
+            </section>
+
+       
+
+            <section>
+                <h1>Conclusions</h1>
+                <ol>
+                    <li>Evaluating options is very difficult</li>
+                    <li>No right answers, only trade-offs</li>
+                    <li>Hindsight is a wonderful thing</li>
+                    <li>Get on the plane - Seth Godin</li>
+                    <li>Doing nothing is not an option</li>
+                </ol>
+            </section>
+
+			
+			<section>
+                <h1>Questions</h1>
+				<p>https://github.com/hunt3ri/TechChallenge</p>
+            </section>
+
+            
+        </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+
+    <script>
+
+        // Full list of configuration options available here:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+
+            theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+            transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+
+            // Parallax scrolling
+            //parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+            parallaxBackgroundImage: 'images/sky3.jpg',
+            parallaxBackgroundSize: '1920px 1200px',
+
+
+
+            // Optional libraries used to extend on reveal.js
+            dependencies: [
+                { src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+                { src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                { src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                { src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+                { src: 'plugin/zoom-js/zoom.js', async: true, condition: function () { return !!document.body.classList; } },
+                { src: 'plugin/notes/notes.js', async: true, condition: function () { return !!document.body.classList; } }
+            ]
+        });
+
+    </script>
+</body>
+</html>
